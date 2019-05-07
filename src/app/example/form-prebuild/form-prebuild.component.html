@@ -1,0 +1,48 @@
+<form>
+  <div class="form-group">
+  <mat-tab-group>
+    <mat-tab label="tab One">
+      <h1>Some tab content</h1>
+      <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          </mat-card-header>
+          <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+          Image here
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary">Primary</button>
+            <button mat-raised-button color="accent">Accent</button>
+          </mat-card-actions>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="tab Two">
+      <h1>Some more tab content</h1>
+      <div class="form-group">
+          <label for="">Name</label>
+          <input name="name" type="text" class="form-control" required>
+      </div>
+      <div class="form-group">
+         <label for="">Address</label>
+          <input name="addressLine1"  type="text" class="form-control" placeholder="Line 1" required>
+      </div>
+      <div class="form-group">
+          <label for=""></label>
+          <input name="addressLine2"  type="text" class="form-control" placeholder="Line 2" required>
+      </div>
+      <mat-form-field>
+          <input matInput type=text placeholder="City">
+      </mat-form-field>
+      <button mat-button class="btn btn-primary">Place Order</button>  
+    </mat-tab>
+  </mat-tab-group>
+</div>
+</form>

@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+//@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+//@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+//@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+@import './assets/styles/header';
+
+@import '~@angular/material/_theming';
+@include mat-core();
+
+@import './themes/customL-theme';
+@import './themes/customD-theme';
+@import './app/example/parent/parent.component-scss-theme';
+
+// use mixin for global 
+@mixin custom-component-theme($theme){
+    @include parent-theme($theme);
+    /*... add more global componenet here .... */
+}
+.customL-theme{
+    @include angular-material-theme($customL-theme);
+    @include custom-component-theme($customL-theme);
+}
+
+.customD-theme{
+    @include angular-material-theme($customD-theme);    
+    @include custom-component-theme($customD-theme);        
+}
+
+

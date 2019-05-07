@@ -1,0 +1,5 @@
+$customL-primary: mat-palette($mat-cyan);
+$customL-accent:  mat-palette($mat-teal, 400, 200, 600);
+$customL-warn:    mat-palette($mat-red);
+
+$customL-theme: mat-dark-theme($customL-primary, $customL-accent, $customL-warn);

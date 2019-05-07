@@ -1,0 +1,5 @@
+$customD-primary: mat-palette($mat-purple);
+$customD-accent:  mat-palette($mat-pink);
+$customD-warn:    mat-palette($mat-red);
+
+$customD-theme: mat-light-theme($customD-primary, $customD-accent, $customD-warn);
