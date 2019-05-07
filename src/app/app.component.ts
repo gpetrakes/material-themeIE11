@@ -15,6 +15,7 @@ export class AppComponent {
   theme =  'customL-theme';
   selected = 'option2';
 
+  /** C */
 
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
